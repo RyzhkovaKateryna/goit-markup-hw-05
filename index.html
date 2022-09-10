@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./extentions.json">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -15,26 +16,23 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./styles/styles.css"/>
 </head>
-
 <body  class="page">
     <!-- header -->
     <header class="header">
        <div class="container header-box">
-        
         <nav class="main-nav">
             <a class="logo header-logo" href="./index.html" lang="en"><span class="logo-braket-nav">Web</span>Studio</a>
             <ul class="list header-list-nav">
-                <li class="link"> <a class="item-nav current-page" href="#">Студія</a> </li>
-                <li class="link"> <a class="item-nav" href="./portfolio.html">Портфоліо</a></li>
-                <li class="link"> <a class="item-nav" href="#">Контакти</a></li>
+                    <li class="link"> <a class="item-nav current-page" href="#">Студія</a></li>
+                    <li class="link"> <a class="item-nav" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="link"> <a class="item-nav" href="#">Контакти</a></li>
             </ul>
         </nav>
         <ul class="list header-list">
             <li class="link"><a class="header-link header-icons" href="mailto:info@devstudio.com">
                 <svg class="ficons" width="16" height="12">
                 <use href="./images/icons.svg#post"></use>
-                </svg>                
-                info@devstudio.com</a></li>
+                </svg>info@devstudio.com</a></li>
             <li class="link"><a class="header-link header-icons" href="tel:+380961111111">
                 <svg class="ficons" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
@@ -49,7 +47,7 @@
         <section class="section-title">
             <div class="container main-container">
             <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="btn current-btn" type="button">Замовити послугу</button>                
+            <button class="btn current-btn" type="button" data-modal-open>Замовити послугу</button>                
             </div>
 
         </section>
@@ -57,7 +55,6 @@
         <section class="section features-section">    
         <div class="container">        
         <h2 class="visually-hidden">Принципи в роботі</h2>
-
             <ul class="list feature-list">
                 <li class="item-features">
                     <div class="feature-icon">
@@ -103,12 +100,24 @@
             <div class="container">
             <h2 class="title"> Чим ми займаємося</h2>
             <ul class="list activity-list">
-                <li class="item-developments"> <img class="img-item" src="./images/box/box-1.jpg" alt="розробка прграмного забезпечення" width="370" height="295">
+                <li class="item-developments">
+                    <div class="thumb-activity">
+                    <img class="img-item img-article" src="./images/box/box-1.jpg" alt="розробка прграмного забезпечення" width="370" height="295">
+                    <p class="article-activity">Десктопні додатки</p>
+                    </div>  
                 </li>
-                <li class="item-developments"> <img class="img-item" src="./images/box/box-2.jpg" alt="тестування мобільного додатку" width="370" height="295">
+                <li class="item-developments">
+                    <div class="thumb-activity">
+                    <img class="img-item img-article" src="./images/box/box-2.jpg" alt="тестування мобільного додатку" width="370" height="295">
+                    <p class="article-activity">Мобільні додатки</p>
+                    </div>
                 </li>
-                <li class="item-developments"> <img class="img-item" src="./images/box/box-3.jpg" alt="робота з палітрою кольорів" width="370" height="295"></li>
-            </ul>                
+                <li class="item-developments">
+                    <div class="thumb-activity">
+                    <img class="img-item img-article" src="./images/box/box-3.jpg" alt="робота з палітрою кольорів" width="370" height="295">
+                    <p class="article-activity">Дизайнерські рішення</p>
+                    </div>
+                </li>
             </div>
 
         </section>
@@ -399,7 +408,6 @@
     </section>
  
     <!-- Footer -->
-
     <footer class="footer">
         <div class="container footer-box">
             <div>
@@ -461,6 +469,16 @@
         </div>
 
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-btn" type="button" data-modal-close>
+                <svg class="modal-icon" width="11" height="11">
+                    <use href="./images/svg/close.svg/icomoon-ignore"></use>
+                    </svg>
+            </button>
+        </div>
+    </div>
+<script src="./js/modal.js"></script>
 </body>
 
 </html>

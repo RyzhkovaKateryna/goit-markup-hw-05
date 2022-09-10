@@ -10,5 +10,6 @@
   "jsxBracketSameLine": false,
   "arrowParens": "avoid",
   "proseWrap": "always",
-  "htmlWhitespaceSensitivity": "strict"
+  "htmlWhitespaceSensitivity": "strict",
+  "liveServer.settings.port": 5501
 }
