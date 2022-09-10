@@ -743,6 +743,7 @@ padding-bottom: 200px;
     border: 1px solid var(--border-modal-btn-01);
     border-radius: 50%;
     cursor: pointer;
-
+    color: var(--black-txt-cl);
+    background-color: var(--main-light-bg-cl);
 
 }
