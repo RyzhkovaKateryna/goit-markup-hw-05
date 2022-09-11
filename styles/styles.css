@@ -108,6 +108,9 @@
     line-height: calc(16/14);
     letter-spacing: 0.02em;
     color: var(--grey-txt-cl);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .item-nav {
@@ -217,6 +220,9 @@
     cursor: pointer;
     padding: 6px 22px;
     border-radius: 4px;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover,
 .btn:focus,
@@ -365,6 +371,9 @@ img {
     color: var(--social-icons-cl);
     background-color: var(--main-light-bg-cl);
     border-radius: 50%;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .team-link:hover,
@@ -437,6 +446,9 @@ img {
     background-color: var(--light-txt-cl);
     border: 1px solid var(--social-icons-cl);
     border-radius: 4%;
+    transition-property: color, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .client-icons {
@@ -472,7 +484,10 @@ img {
     font-size: 14px;
     line-height: calc(24/14);
     letter-spacing: 0.03em; 
-    color: var(--light-txt-cl-60);   
+    color: var(--light-txt-cl-60); 
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
 }
 .adres {
     color: var(--light-txt-cl);
@@ -619,11 +634,9 @@ padding-bottom: 200px;
     width: 100%;
     height: 100%;
     background-color: var(--project-overflov-bg-cl);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 63px 24px;
     transform: translateY(100%);
-    transition-property: background-color, transform;
+    transition-property: background-color, transform, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -681,6 +694,9 @@ padding-bottom: 200px;
     color: var(--light-txt-cl);
     background-color: var( --footer-icons-bg-cl);
     border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 .foot-link:hover,
 .foot-link:focus {
