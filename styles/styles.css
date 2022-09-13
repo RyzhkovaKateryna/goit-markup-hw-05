@@ -611,13 +611,13 @@ padding-bottom: 200px;
 .portfolio-link:focus,
 .portfolio-link:hover {
     box-shadow: 0px 1px 3px var(--shadow-card-12), 0px 1px 1px var(--shadow-card-14), 0px 2px 1px var(--shadow-card-02);
-    border-radius: 0px 0px 4px 4px;
 } 
 .overlay-box {
     position: relative;
     overflow: hidden; 
 }
-.portfolio-link:hover .overlay {
+.portfolio-link:hover .overlay,
+.portfolio-link:focus .overlay {
     transform: translateY(0);
 }
 .overlay {
